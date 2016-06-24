@@ -21,9 +21,9 @@ public class Cube {
    private float[][] colors = {  // Colors of the 6 faces
       {1.0f, 0.5f, 0.0f, 1.0f},  // 0. orange
       {1.0f, 0.0f, 1.0f, 1.0f},  // 1. violet
-      {0.0f, 1.0f, 0.0f, 1.0f},  // 2. green
+      {0.3f, 1.0f, 0.0f, 1.0f},  // 2. green
       {0.0f, 0.0f, 1.0f, 1.0f},  // 3. blue
-      {1.0f, 0.0f, 0.0f, 1.0f},  // 4. red
+      {1.0f, 0.0f, 0.2f, 1.0f},  // 4. red
       {1.0f, 1.0f, 0.0f, 1.0f}   // 5. yellow
    };
   

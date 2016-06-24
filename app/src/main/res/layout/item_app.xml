@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loading" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="PrivateResource">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:alpha="0.5"
+            android:drawableEnd="@mipmap/ic_star_rate_black_18dp"
+            android:drawablePadding="2dp"
+            android:drawableRight="@mipmap/ic_star_rate_black_18dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            tools:ignore="SpUsage" />
+
+    </LinearLayout>
+</LinearLayout>
