@@ -5,6 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="HeaderTextViewStyle" parent="@android:style/Widget.TextView">
         <item name="android:textColor">@android:color/darker_gray</item>
         <item name="android:textStyle">bold</item>

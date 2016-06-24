@@ -1,45 +1,104 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentPanel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin">
+    tools:ignore="PrivateResource">
+
+    <ImageView
+        android:id="@+id/aboutImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:scaleType="centerCrop" />
 
     <TextView
-        android:text="@string/author"
-        style="@style/HeaderTextViewStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <View
-        android:background="@android:color/darker_gray"
+        android:id="@android:id/text1"
         android:layout_width="match_parent"
-        android:layout_height="1dp" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutImageView"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp" />
 
     <TextView
-        android:text="@string/nwanvu"
-        style="@style/ContentTextViewStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:text="@string/source"
-        style="@style/HeaderTextViewStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <View
-        android:background="@android:color/darker_gray"
+        android:id="@+id/aboutVersionTextView"
         android:layout_width="match_parent"
-        android:layout_height="1dp" />
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/app_version" />
 
     <TextView
-        android:text="@string/source_url"
-        style="@style/ContentTextViewStyle"
+        android:id="@android:id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutVersionTextView"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/made_by"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@android:id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text2"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/contact_me"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/aboutContactMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoLink="web"/>
+        android:layout_below="@android:id/custom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:autoLink="email"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="@string/email_address"
+        android:textSize="16sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/action_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutContactMe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/action_github" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_github"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:text="@string/url_source" />
+
+    <Button
+        android:id="@+id/licenses"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="start|center_vertical"
+        android:paddingEnd="0dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="0dp"
+        android:paddingStart="24dp"
+        android:text="@string/text_open_source_licenses" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_device_id" translatable="false">
+        <item>A21B335DE6DCE7233ED424DBE2B352BB</item>
+        // zen 2
+        <item>FF24EB9BED80C9E5556418A3AFD85268</item>
+        <item>3716675755A2C470A8221846DFBF9171</item>
+        // geny nexus 4 cty
+        <item>2E9E91962395DE1089CECE73099FD553</item>
+        // geny nexus 4 home
+        <item>4FF50A7C99C5B90B541C64CAEB6A8EBE</item>
+        <item>A516324529A7A7B14208E35B56AD4695</item>
+        // geny sony z
+        <item>5EF608F0AFD5C8F8D8BA0FC448073C2F</item>
+        // LG-P500
+        <item>DCB94E91E2707E958E6B4A9AE9422845</item>
+    </string-array>
+</resources>
