@@ -1,29 +1,35 @@
-# README #
+# Basic 3D object example #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A demo about OpenGL and how to create a 3D object
 
-### What is this repository for? ###
+### Demo ###
+<a href='https://play.google.com/store/apps/details?id=com.nwanvu.example.opengl3d'>
+<img width="150" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+</a>
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Screenshot ###
+<p align="center">
+  <img src="https://github.com/nwanvu93/Basic-3D-object-example/blob/master/screenshot/diamond.png" width="350"/>
+  <img src="https://github.com/nwanvu93/Basic-3D-object-example/blob/master/screenshot/cube.png" width="350"/>
+</p>
 
-### How do I get set up? ###
+### Sample object included ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Diamond
+* Cube
 
-### Contribution guidelines ###
+### License ###
 
-* Writing tests
-* Code review
-* Other guidelines
+    Copyright 2016 Vu Nguyen.
 
-### Who do I talk to? ###
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-* Repo owner or admin
-* Other community or team contact
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
